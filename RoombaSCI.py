@@ -549,7 +549,7 @@ if __name__ == "__main__":
     print "starting ..."
 
     if (len(sys.argv) < 2):
-        port = "/dev/rfcomm0"
+        port = "/dev/ttyUSB0"
     else:
         port = sys.argv[1]
 
@@ -583,5 +583,3 @@ if __name__ == "__main__":
 
     finally:
         print "Off"
-        x.off()
-        x.close()
